@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-brand-50: #f6fbea;
+  --color-brand-100: #ebf7cf;
+  --color-brand-200: #d9f0a3;
+  --color-brand-300: #c4e676;
+  --color-brand-400: #a8d651;
+  --color-brand-500: #8dc63f;
+  --color-brand-600: #6fa52a;
+  --color-brand-700: #527d1f;
+  --color-brand-900: #2b4210;
+  --color-paper: #f2f3ee;
+}
+
+/* Bigger base size: everything (text, spacing, buttons) scales up for easy reading */
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background: var(--color-paper);
+  color: #171a12;
+  margin: 0;
+}
+button, a { touch-action: manipulation; }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
+
+.stripes {
+  background-image: repeating-linear-gradient(135deg, #e4e6df 0 2px, transparent 2px 7px);
+}
